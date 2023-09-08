@@ -101,15 +101,15 @@ export const App = () => {
 
   return (
     <div className="container">
+      <h2>Match two cards to learn a new AK fact!</h2>
       <div className="top-buttons">
         <button className="button" onClick={handleRestart}>Restart</button>
-        <button className="button" onClick={handleSolveGame}>Solve Game</button>
-        <button className="button" onClick={handleSolveNext}>Solve Next</button>
+        <button className="button" onClick={handleSolveGame}>Give up? Solve Game</button>        
       </div>
       <div className="game-container">
         <div className="game-board">{renderCards()}</div>
         <div className="text-list">
-          <div className="text-list-title">AK Facts from AK</div>
+          <div className="text-list-title">AK facts from AK:</div>
           {renderTextItems()}
         </div>
       </div>
