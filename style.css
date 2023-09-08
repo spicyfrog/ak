@@ -39,6 +39,7 @@ body, html {
 
 /* Style the game board */
 .game-container {
+  max-width: 1400px;
   display: flex;
   flex-direction: row;
   align-items: flex-start; /* Adjusted alignment to have room for text items */
