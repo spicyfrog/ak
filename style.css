@@ -1,0 +1,96 @@
+/* App.css */
+
+/* Center the game container vertically and horizontally */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Style the top buttons */
+.top-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the game board */
+.game-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Adjusted alignment to have room for text items */
+}
+
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: #f2f2f2;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  user-select: none;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+
+/* Style the text list */
+.text-list {
+  width: 25%;
+  margin-left: 20px;
+  text-align: left; /* Align text items to the left */
+  padding: 20px; /* Add padding for separation */
+  border-left: 2px solid #007bff; /* Add a left border for separation */
+}
+
+.text-list-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.text-item {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+body {
+  font-family: Arial, sans-serif;
+}
